@@ -2,6 +2,9 @@ package Fibonacci;
 
 import java.util.Scanner;
 
+/**
+ * Fibonacci algorithm.
+ */
 public class Fibonacci {
     public static void main(String[] args) {
 

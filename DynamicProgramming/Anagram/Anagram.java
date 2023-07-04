@@ -2,6 +2,9 @@ package Anagram;
 
 import java.util.Scanner;
 
+/**
+ * Algorithm that checks if a string is anagram.
+ */
 public class Anagram {
 
     static boolean isAnagram(String s1, String s2) {

@@ -1,5 +1,8 @@
 package SumOfSubset;
 
+/**
+ * Algorithm to get the sum of a subset.
+ */
 public class SumOfSubset {
 
     public static void main(String[] args) {
