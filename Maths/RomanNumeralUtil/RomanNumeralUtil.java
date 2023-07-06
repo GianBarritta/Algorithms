@@ -1,8 +1,7 @@
 package RomanNumeralUtil;
 
 /**
- * Translates numbers into the Roman Numeral System.
- *
+ * Algorithm that translates numbers to the Roman numeral system.
  */
 public class RomanNumeralUtil {
 

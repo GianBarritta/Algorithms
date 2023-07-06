@@ -3,7 +3,7 @@ package Palindrome;
 import java.util.Scanner;
 
 /**
- * Algorithm that checks if a string is palindrome
+ * Algorithm that checks if a string is palindrome.
  */
 public class Palindrome {
 

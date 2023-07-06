@@ -1,7 +1,7 @@
 package Average;
 
 /**
- * Calculate average of a list of numbers
+ * Algorithm that calculates the average of a list of numbers.
  */
 public class Average {
 
