@@ -8,6 +8,7 @@ import java.util.Arrays;
  * LeetCode Problem: https://leetcode.com/problems/target-sum/
  */
 public class Solution {
+
     public int findTargetSumWays(int[] array, int target) {
         int sum = Arrays.stream(array).sum();
 
