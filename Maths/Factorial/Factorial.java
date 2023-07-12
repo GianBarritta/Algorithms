@@ -5,6 +5,7 @@ package Factorial;
  */
 public class Factorial {
 
+    // driver code
     public static void main(String[] args) {
         assert factorial(0) == 1;
         assert factorial(1) == 1;
