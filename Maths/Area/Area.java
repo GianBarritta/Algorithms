@@ -45,4 +45,21 @@ public class Area {
         }
         return 4 * Math.PI * radius * radius;
     }
+
+    /**
+     * Calculate the area of a rectangle.
+     *
+     * @param length length of a rectangle
+     * @param width  width of a rectangle
+     * @return area of given rectangle
+     */
+    public static double surfaceAreaRectangle(final double length, final double width) {
+        if (length <= 0) {
+            throw new IllegalArgumentException("Must be a positive length");
+        }
+        if (width <= 0) {
+            throw new IllegalArgumentException("Must be a positive width");
+        }
+        return length * width;
+    }
 }
