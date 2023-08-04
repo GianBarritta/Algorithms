@@ -62,4 +62,21 @@ public class Area {
         }
         return length * width;
     }
+
+    /**
+     * Calculate surface area of a cylinder.
+     *
+     * @param radius radius of the floor
+     * @param height height of the cylinder.
+     * @return volume of given cylinder
+     */
+    public static double surfaceAreaCylinder(final double radius, final double height) {
+        if (radius <= 0) {
+            throw new IllegalArgumentException(POSITIVE_RADIUS);
+        }
+        if (height <= 0) {
+            throw new IllegalArgumentException(POSITIVE_RADIUS);
+        }
+        return 2 * (Math.PI * radius * radius + Math.PI * radius * height);
+    }
 }
