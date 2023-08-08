@@ -79,4 +79,17 @@ public class Area {
         }
         return 2 * (Math.PI * radius * radius + Math.PI * radius * height);
     }
+
+    /**
+     * Calculate the area of a square.
+     *
+     * @param sideLength side length of square
+     * @return area of given square
+     */
+    public static double surfaceAreaSquare(final double sideLength) {
+        if (sideLength <= 0) {
+            throw new IllegalArgumentException("Must be a positive sideLength");
+        }
+        return sideLength * sideLength;
+    }
 }
