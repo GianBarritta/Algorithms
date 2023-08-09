@@ -92,4 +92,21 @@ public class Area {
         }
         return sideLength * sideLength;
     }
+
+    /**
+     * Calculate the area of a triangle.
+     *
+     * @param base   base of triangle
+     * @param height height of triangle
+     * @return area of given triangle
+     */
+    public static double surfaceAreaTriangle(final double base, final double height) {
+        if (base <= 0) {
+            throw new IllegalArgumentException(POSITIVE_BASE);
+        }
+        if (height <= 0) {
+            throw new IllegalArgumentException(POSITIVE_HEIGHT);
+        }
+        return base * height / 2;
+    }
 }
