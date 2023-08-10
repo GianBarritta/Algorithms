@@ -109,4 +109,21 @@ public class Area {
         }
         return base * height / 2;
     }
+
+    /**
+     * Calculate the area of a parallelogram.
+     *
+     * @param base   base of a parallelogram
+     * @param height height of a parallelogram
+     * @return area of given parallelogram
+     */
+    public static double surfaceAreaParallelogram(final double base, final double height) {
+        if (base <= 0) {
+            throw new IllegalArgumentException(POSITIVE_BASE);
+        }
+        if (height <= 0) {
+            throw new IllegalArgumentException(POSITIVE_HEIGHT);
+        }
+        return base * height;
+    }
 }
