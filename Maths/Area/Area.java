@@ -126,4 +126,25 @@ public class Area {
         }
         return base * height;
     }
+
+    /**
+     * Calculate the area of a trapezium.
+     *
+     * @param base1  upper base of trapezium
+     * @param base2  bottom base of trapezium
+     * @param height height of trapezium
+     * @return area of given trapezium
+     */
+    public static double surfaceAreaTrapezium(final double base1, final double base2, final double height) {
+        if (base1 <= 0) {
+            throw new IllegalArgumentException(POSITIVE_BASE + 1);
+        }
+        if (base2 <= 0) {
+            throw new IllegalArgumentException(POSITIVE_BASE + 2);
+        }
+        if (height <= 0) {
+            throw new IllegalArgumentException(POSITIVE_HEIGHT);
+        }
+        return (base1 + base2) * height / 2;
+    }
 }
