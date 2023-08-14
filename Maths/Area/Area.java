@@ -147,4 +147,17 @@ public class Area {
         }
         return (base1 + base2) * height / 2;
     }
+
+    /**
+     * Calculate the area of a circle.
+     *
+     * @param radius radius of circle
+     * @return area of given circle
+     */
+    public static double surfaceAreaCircle(final double radius) {
+        if (radius <= 0) {
+            throw new IllegalArgumentException(POSITIVE_RADIUS);
+        }
+        return Math.PI * radius * radius;
+    }
 }
