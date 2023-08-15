@@ -160,4 +160,18 @@ public class Area {
         }
         return Math.PI * radius * radius;
     }
+
+    /**
+     * Calculate the surface area of a hemisphere.
+     *
+     * @param radius radius of hemisphere
+     * @return surface area of given hemisphere
+     */
+    public static double surfaceAreaHemisphere(final double radius) {
+        if (radius <= 0) {
+            throw new IllegalArgumentException(POSITIVE_RADIUS);
+        }
+        return 3 * Math.PI * radius * radius;
+    }
+
 }
