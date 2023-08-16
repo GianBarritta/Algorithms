@@ -174,4 +174,20 @@ public class Area {
         return 3 * Math.PI * radius * radius;
     }
 
+    /**
+     * Calculate the surface area of a cone.
+     *
+     * @param radius radius of cone.
+     * @param height of cone.
+     * @return surface area of given cone.
+     */
+    public static double surfaceAreaCone(final double radius, final double height) {
+        if (radius <= 0) {
+            throw new IllegalArgumentException(POSITIVE_RADIUS);
+        }
+        if (height <= 0) {
+            throw new IllegalArgumentException(POSITIVE_HEIGHT);
+        }
+        return Math.PI * radius * (radius + Math.pow(height * height + radius * radius, 0.5));
+    }
 }
